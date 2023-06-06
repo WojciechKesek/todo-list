@@ -1,0 +1,15 @@
+<div class="toDoElements">
+  <div class="list" *ngFor="let task of tasks">
+    <app-todo [task]="task"></app-todo>
+  </div>
+<div class="buttonPlacment">
+  <button
+    class="button-3"
+    role="button"
+    type="submit"
+    (click)="deleteCompleted()"
+  >
+    Delete completed tasks
+  </button>
+</div>
+</div>
