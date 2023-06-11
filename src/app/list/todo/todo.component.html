@@ -1,5 +1,5 @@
 <div class="listElement">
-  <div>
+  <div class="task">
     <input type="checkbox" (change)="isDone(task)" />
     <div *ngIf="!isEdit" (click)="isEdit = true">
       {{ task.taskName }}
@@ -12,7 +12,7 @@
       (keyup.enter) = "changeTask(task)"
     />
   </div>
-  <button class="button-3" role="button" type="submit" (click)="delete(task)">
+  <button class="delete-button" role="button" type="submit" (click)="delete(task)">
     Delete
   </button>
 </div>
