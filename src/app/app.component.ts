@@ -8,10 +8,4 @@ import { Task } from './task';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-
-  constructor(public taskService: TaskService){
-  }
- 
-  
 }
