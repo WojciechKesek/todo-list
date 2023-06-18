@@ -17,6 +17,8 @@ export class TaskService {
   }
   deleteTask(task:Task){
     this.tasks = this.tasks.filter(p => p !== task);
+    console.log(task)
+
   }
   deleteCompletedTasks(){
     this.tasks = this.tasks.filter(p => p.isDone !== true);

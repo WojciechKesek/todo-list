@@ -1,7 +1,7 @@
 <div class="listElement">
   <div class="task">
     <input type="checkbox" (change)="isDone(task)" />
-    <div *ngIf="!isEdit" (click)="isEdit = true">
+    <div [ngStyle]="{ 'text-decoration': task.isDone? 'line-through' : 'none'}" *ngIf="!isEdit" (click)="isEdit = true">
       {{ task.taskName }}
     </div>
     <input

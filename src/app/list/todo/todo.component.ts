@@ -8,17 +8,17 @@ import { TaskService } from 'src/app/task.service';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent {
-  taskService: TaskService;
-
   constructor(taskService: TaskService) {
     this.taskService = taskService;
   }
+  taskService: TaskService;
 
-  isEdit = false;
-  newTask = '';
+  
 
   @Input()
   task!: Task;
+  isEdit: boolean = false;
+  newTask: string = '';
   delete(task: Task){
     this.taskService.deleteTask(task);
   }

@@ -9,21 +9,15 @@ import { Task } from '../task';
 })
 export class ListComponent {
   title = 'todo-list';
-  taskService: TaskService;
+  public taskService: TaskService;
 
   constructor(taskService: TaskService){
     this.taskService = taskService;
   }
-  @Input()
-  tasks!:Task[];
 
-  delete(task: Task){
-    this.taskService.deleteTask(task);
-  }
-  isDone(task: Task){
-    this.taskService.changeTaskIsDone(task);
-    console.log(task.isDone);
-  }
+  @Input()
+  tasks!: Task[];
+  
   deleteCompleted(){
     this.taskService.deleteCompletedTasks();
   }

@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TaskService } from './task.service';
 import { ListComponent } from './list/list.component';
-import { AddTodoComponent } from './add-todo/add-todo.component';
+import { AddTodoComponent } from './list/add-todo/add-todo.component';
 import { TodoComponent } from './list/todo/todo.component';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]

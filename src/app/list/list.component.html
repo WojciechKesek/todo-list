@@ -1,5 +1,5 @@
 <div class="toDoElements">
-  <div class="list" *ngFor="let task of tasks">
+  <div class="list" *ngFor="let task of taskService.tasks">
     <app-todo [task]="task"></app-todo>
   </div>
 <div class="buttonPlacment">
@@ -12,4 +12,5 @@
     Delete completed tasks
   </button>
 </div>
+  <app-add-todo></app-add-todo>
 </div>

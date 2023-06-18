@@ -4,8 +4,9 @@
   </div>
 </header>
 <main>
-<app-list [tasks]="taskService.tasks"></app-list>
-<app-add-todo></app-add-todo>
+<!-- <app-list [tasks]="taskService.tasks"></app-list>
+<app-add-todo></app-add-todo> -->
+  <router-outlet></router-outlet>
 </main>
 <footer>
   <p>Double click on task to edit</p>
