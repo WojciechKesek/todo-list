@@ -3,16 +3,12 @@
 Generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
 ## About
-This project was created as part of the training of the JavaScript programming language and the Angular framework
+The ToDo list application offers users the ability to perform task management operations, including adding, deleting, and modifying tasks.
 
-ToDo list allows you to add, delete and modify tasks.
+In addition, a user-friendly interface has been crafted using CSS to enhance the overall user experience.
 
-In addition, in order to create a user-friendly interface, the whole thing was styled with CSS
+- Adding a task by simply entering the task description and clicking the 'Add' button.
+- Deleting tasks can be accomplished by clicking the 'Delete' button next to an individual task or selecting multiple tasks and using the 'Delete All' option.
+- Modifying a task is achieved by double-clicking on the task name, which transforms it into an editable field. The task updates once you fill in the necessary changes and confirm.
 
-- To add a task, just enter the task and click add
-
-- To delete a given task, we can click the delete button next to the task, or select multiple tasks and click delete all.
-
-- To modify the task, double-click on the task name. The name will change into a field, which will update after filling in and accepting.
-
-The app uses the H2 database.
+The application is backed by an H2 database, ensuring efficient data management
